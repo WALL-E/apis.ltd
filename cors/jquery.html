@@ -5,9 +5,10 @@
   <script type="text/javascript" src="http://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.3.min.js"></script>
 </head>
 <body>
-    <p class="text-center">Jquery CORS Test</p>
-<script>
-$.ajax({
+  <p class="text-center">Jquery CORS Test</p>
+  <img src="https://apis.qianbao.com/cookie">
+  <script>
+  $.ajax({
     url:'https://apis.qianbao.com/basicservice/v1/gateway_unit_test',
     type:'get',
     success: function(json){
@@ -16,7 +17,7 @@ $.ajax({
     error:function(json){
         console.log("failed");
     }
-});
+  });
 </script>
 </body>
 </html>
