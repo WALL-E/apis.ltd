@@ -1,0 +1,24 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <script type="text/javascript" src="http://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.3.min.js"></script>
+</head>
+<body>
+    <p class="text-center">Jquery CORS Test</p>
+<script>
+$.ajax({
+    url:'https://apis.qianbao.com/basicservice/v1/gateway_unit_test',
+    type:'get',
+    success: function(json){
+        console.log(json);
+    },
+    error:function(json){
+        console.log("failed");
+    }
+});
+</script>
+</body>
+</html>
+
+
